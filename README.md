@@ -1,65 +1,65 @@
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvirtual-event-starter-kit&project-name=virtual-event-starter-kit&repository-name=virtual-event-starter-kit&demo-title=Virtual%20Event%20Starter%20Kit&demo-description=Jumpstart%20your%20virtual%20event%20and%20scale%20to%20any%20size%20with%20Next.js%20and%20Vercel.&demo-url=https%3A%2F%2Fdemo.vercel.events%2F&demo-image=https%3A%2F%2Fdemo.vercel.events%2Fdeploy.png&integration-ids=oac_I1h8Dm9Mf30VNb3xQ0hebYvS&external-id=%7B%22manifest%22%3A%20%22https%3A%2F%2Fraw.githubusercontent.com%2Fvercel%2Fvirtual-event-starter-kit%2Fmain%2Fdatocms.json%22%7D)
 
-# [Virtual Event Starter Kit](https://vercel.com/virtual-event-starter-kit)
+# [Kit Inicial para Evento Virtual](https://vercel.com/virtual-event-starter-kit)
 
 ### Demo: https://demo.vercel.events
 
-This virtual event starter kit was used to run [Next.js Conf 2020](https://nextjs.org/2020/conf), which had almost 40,000 live attendees. It includes the following features:
+Esse kit de para Evento Virtual foi desenvolvido tendo como modelo a [Next.js Conf 2020](https://nextjs.org/2020/conf), que realizou mais de  40.000 atendimentos ao vivo. Este pacote inclui os seguintes recursos:
 
-- Multiple stages with an embedded YouTube stream
-- Sponsor expo, including individual virtual booths
+- Múltiplos estágios com a incorparação de um YouTube stream.
+- Exposição de patrocinadores, incluindo tanto os individuais como os virtuais.
 - Career Fair, allowing attendees to network and find job opportunties
-- Ticket registration and generation
-- Speaker pages and bios
-- Schedule
+- Criação e registro de ingresso
+- Páginas de interação e bios
+- Agenda
 
-This platform is built upon three principles:
+Essa plataforma foi construída com base nos princípios:
 
-- **Delegation:** Running a conference is difficult – you have to **delegate** tasks to third-parties to ensure success. Certain elements of an online conference experience are tough to get right, and we'd rather lean on established, industry leading solutions.
-- **Flexibility:** While delegating certain elements of the conference experience is helpful, it's also important to own the platform. That's why this template provides a **flexible** open-source codebase that can be modified for your event.
-- **Reducing Risk:** It's inevitable something will go wrong during your event. This platform **reduces risk** by leaning on a dynamic site that outputs as static files using [Incremental Static Generation](https://nextjs.org/docs/basic-features/data-fetching). These static files are cached, ensuring your site is never down. Then, it uses [API Routes](https://nextjs.org/docs/api-routes/introduction) to sprinkle dynamic content on top, which are hosted by a provider with 99.99% uptime.
+- **Delegação:** Realizar uma conferência é difícil – você deve **delegar** tarefas a terceiros para obter sucesso. Alguns elementos de uma conferência online são difíceis de acertar, por isso é preferível confiar em quem já possui experiência no assunto.
+- **Flexibilidade:** Embora delegar certos elementos da conferência seja útil, também é importante possuir uma plataforma. É por isso que este modelo fornece uma base de código aberto **flexível** que pode ser modificada para o seu evento.
+- **Redução de riscos:** É inevitável que algo dê errado durante o seu evento. Essa plataforma **reduz riscos** apoiando-se em um site dinâmico que produz arquivos estáticos usando [Incremental Static Generation](https://nextjs.org/docs/basic-features/data-fetching). Esses arquivos estáticos são armazenados em cache, garantindo que seu site nunca fique inativo. Então, ele usa [API Routes](https://nextjs.org/docs/api-routes/introduction) para espalhar conteúdo dinâmico no topo, que é hospedado por um provedor com 99,99% de tempo de atividade.
 
-### Built With
+### Construção
 
 - Framework: [Next.js](https://nextjs.org)
   - [CSS Modules](https://nextjs.org/docs/basic-features/built-in-css-support)
   - [TypeScript](https://nextjs.org/docs/basic-features/typescript)
 - CMS: [Multiple Options](#cms)
-- Videos: [YouTube](https://www.youtube.com)
+- Vídeos: [YouTube](https://www.youtube.com)
 - Deployment: [Vercel](https://vercel.com)
-- Authentication: [GitHub OAuth](https://docs.github.com/en/free-pro-team@latest/developers/apps/authorizing-oauth-apps)
+- Autenticação: [GitHub OAuth](https://docs.github.com/en/free-pro-team@latest/developers/apps/authorizing-oauth-apps)
 - Database: [Redis](https://redis.io)
 
-## Running Locally
+## Executando Localmente
 
-First, set local environment variables. We've included a read-only DatoCMS access token you can use in `.env.local.example`.
+Primeiro, defina as variáveis de ambiente locais. Foi incluído um token de acesso DatoCMS somente leitura que você pode usar em `.env.local.example`.
 
 ```
 cp .env.local.example .env.local
 ```
 
-Then install packages and run the development server:
+Em seguida, instale os pacotes e execute o servidor de desenvolvimento:
 
 ```bash
 yarn install
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) com seu navegador para ver o resultado.
 
 ## Clone and Deploy
 
-Click the button below to clone and deploy this template on [Vercel](https://vercel.com/).
+Click no botão abaixo para clonar e fazer o deploy deste template no [Vercel](https://vercel.com/).
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvirtual-event-starter-kit&project-name=virtual-event-starter-kit&repository-name=virtual-event-starter-kit&demo-title=Virtual%20Event%20Starter%20Kit&demo-description=Jumpstart%20your%20virtual%20event%20and%20scale%20to%20any%20size%20with%20Next.js%20and%20Vercel.&demo-url=https%3A%2F%2Fdemo.vercel.events%2F&demo-image=https%3A%2F%2Fdemo.vercel.events%2Fdeploy.png&integration-ids=oac_I1h8Dm9Mf30VNb3xQ0hebYvS&external-id=%7B%22manifest%22%3A%20%22https%3A%2F%2Fraw.githubusercontent.com%2Fvercel%2Fvirtual-event-starter-kit%2Fmain%2Fdatocms.json%22%7D)
 
-You’ll be asked to install the [DatoCMS](https://www.datocms.com) integration. It lets you sign up or log in to DatoCMS and create a new DatoCMS project based on the data (speakers, stages, etc.) used in the demo.
+Você será solicitado a instalar a integração do [DatoCMS](https://www.datocms.com). Ele permite que você se inscreva ou faça login no DatoCMS e crie um novo projeto DatoCMS com base nos dados (palestrantes, sessões, etc.) usados na demonstração.
 
 ## Customize
 
 ### CMS
 
-Environment variables determine which CMS to use. See [`lib/cms-api.ts`](lib/cms-api.ts) for details and `.env.local.example` for all environment variables. The demo ([demo.vercel.events](https://demo.vercel.events)) uses DatoCMS, but we also have support for:
+Variáveis de ambiente determinam qual CMS usar. Veja [`lib/cms-api.ts`](lib/cms-api.ts) para maiores detalhes e `.env.local.example` para todas as variáveis de ambiente. A demo ([demo.vercel.events](https://demo.vercel.events)) usa DatoCMS, mas também é suportada por:
 
 - [Agility](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvirtual-event-starter-kit&project-name=virtual-event-starter-kit&repository-name=virtual-event-starter-kit&demo-title=Virtual%20Event%20Starter%20Kit&demo-description=Jumpstart%20your%20virtual%20event%20and%20scale%20to%20any%20size%20with%20Next.js%20and%20Vercel.&demo-url=https%3A%2F%2Fdemo.vercel.events%2F&demo-image=https%3A%2F%2Fdemo.vercel.events%2Fdeploy.png&integration-ids=oac_Dnqk9CoC6rZ18k9nVR9KresV&external-id=%7B%22manifest%22%3A%20%22https%3A%2F%2Fraw.githubusercontent.com%2Fvercel%2Fvirtual-event-starter-kit%2Fmain%2Fdatocms.json%22%2C%20%22githubRepo%22%3A%20%22vercel%2Fvirtual-event-starter-kit%22%7D)
 - [Contentful](lib/cms-providers/contentful.ts)
